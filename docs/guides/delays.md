@@ -308,7 +308,7 @@ states: {
       send(after(1000, 'light.green'), { delay: 1000 }),
       send(after(2000, 'light.green'), { delay: 2000 })
     ],
-    onExit: [
+    exit: [
       cancel(after(1000, 'light.green')),
       cancel(after(2000, 'light.green'))
     ],
